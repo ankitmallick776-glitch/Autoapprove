@@ -1,8 +1,8 @@
 from pyrogram import Client
 
 # Replace these with your actual Telegram API credentials
-API_ID = 123456  # your api_id from https://my.telegram.org
-API_HASH = "your_api_hash_here"  # your api_hash from https://my.telegram.org
+API_ID = 24286461  # your api_id from https://my.telegram.org
+API_HASH = "fe4f9e040dfefaeb8715e12d1e4da9de"  # your api_hash from https://my.telegram.org
 
 # Session name for Pyrogram, can be any string (creates a session file locally)
 SESSION_NAME = "approve_session"

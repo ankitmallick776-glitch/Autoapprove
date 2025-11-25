@@ -9,7 +9,7 @@ SESSION_NAME = "approve_session"
 
 # Your channel or group identifier:
 # Use either numeric ID like -1001234567890 or username like "@yourchannelusername"
-CHAT_ID = -1001234567890
+CHAT_ID = -1003422977804
 
 app = Client(SESSION_NAME, api_id=API_ID, api_hash=API_HASH)
 

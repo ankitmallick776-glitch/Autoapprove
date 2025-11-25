@@ -1,15 +1,14 @@
+import uvloop
+import asyncio
 from pyrogram import Client
 
-# Replace these with your actual Telegram API credentials
-API_ID = 24286461  # your api_id from https://my.telegram.org
-API_HASH = "fe4f9e040dfefaeb8715e12d1e4da9de"  # your api_hash from https://my.telegram.org
+uvloop.install()  # Install uvloop as the event loop policy
 
-# Session name for Pyrogram, can be any string (creates a session file locally)
+API_ID = 24286461  # your api_id here
+API_HASH = "fe4f9e040dfefaeb8715e12d1e4da9de"  # your api_hash here
 SESSION_NAME = "approve_session"
 
-# Your channel or group identifier:
-# Use either numeric ID like -1001234567890 or username like "@yourchannelusername"
-CHAT_ID = -1003422977804
+CHAT_ID = -1003422977804  # your channel or group ID or @username
 
 app = Client(SESSION_NAME, api_id=API_ID, api_hash=API_HASH)
 
@@ -19,4 +18,4 @@ async def main():
         print(f"Approved all pending join requests: {success}")
 
 if __name__ == "__main__":
-    app.run(main())
+    asyncio.run(main())
